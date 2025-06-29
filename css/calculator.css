@@ -1,0 +1,113 @@
+
+/* calculator css */
+.calculator-app {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    min-height: 100vh;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    padding: 20px;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.previous-operand {
+    min-height: 24px;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.current-operand {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.buttons button {
+    border: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.2s;
+}
+
+.buttons button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.buttons button:active {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.buttons button[data-operation] {
+    background: rgba(255, 166, 0, 0.3);
+}
+
+.buttons button[data-operation]:hover {
+    background: rgba(255, 166, 0, 0.4);
+}
+
+.buttons button[data-action="clear"] {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+.buttons button[data-action="clear"]:hover {
+    background: rgba(255, 0, 0, 0.4);
+}
+
+.buttons button[data-action="calculate"] {
+    background: rgba(0, 128, 0, 0.3);
+}
+
+.buttons button[data-action="calculate"]:hover {
+    background: rgba(0, 128, 0, 0.4);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        max-width: 100%;
+    }
+    
+    .buttons button {
+        padding: 15px;
+    }
+}
+/* weather css end */
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+}

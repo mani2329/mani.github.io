@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">ManiRoy</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" >Home</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="close-btn" id="closeMenu"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="menu-btn" id="openMenu"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+    <!-- Projects Header -->
+    <section class="projects-header">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Here are some of my recent works</p>
+        </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="project-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+        <div class="container">
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-item web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/portfolio1.jpg" alt="Project 1">
+                        </div>
+                        <div class="project-details">
+                            <h3>E-Commerce Website</h3>
+                            <p>A fully responsive e-commerce platform with product filtering and cart functionality.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                            </div>
+                            <a href="#" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item design">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/portfolio2.jpg" alt="Project 2">
+                        </div>
+                        <div class="project-details">
+                            <h3>Mobile App UI Design</h3>
+                            <p>User interface design for a fitness tracking mobile application.</p>
+                            <div class="project-tags">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>Prototyping</span>
+                            </div>
+                            <a href="#" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add these with your existing projects -->
+<div class="project-item web">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="images/weather-thumbnail.jpg" alt="Weather App">
+        </div>
+        <div class="project-details">
+            <h3>Weather App</h3>
+            <p>A responsive weather application that displays current conditions and 5-day forecast using OpenWeather API.</p>
+            <div class="project-tags">
+                <span>JavaScript</span>
+                <span>API Integration</span>
+                <span>CSS3</span>
+                <span>Responsive</span>
+            </div>
+            <a href="weather.html" class="btn">View Demo</a>
+            <a href="https://github.com/yourusername/weather-app" class="btn btn-outline" target="_blank">View Code</a>
+        </div>
+    </div>
+</div>
+
+<div class="project-item web">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="images/calculator-thumbnail.jpg" alt="Calculator">
+        </div>
+        <div class="project-details">
+            <h3>Calculator</h3>
+            <p>A fully functional calculator with keyboard support, built with vanilla JavaScript.</p>
+            <div class="project-tags">
+                <span>JavaScript</span>
+                <span>CSS3</span>
+                <span>OOP</span>
+            </div>
+            <a href="calculator.html" class="btn">View Demo</a>
+            <a href="https://github.com/yourusername/calculator" class="btn btn-outline" target="_blank">View Code</a>
+        </div>
+    </div>
+</div>
+                
+
+                <!-- Add more projects following the same pattern -->
+            </div>
+        </div>
+    </section>
+
+     <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; <span id="year"></span> ManiRoy. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

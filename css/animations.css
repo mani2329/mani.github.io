@@ -1,0 +1,100 @@
+/* Animation Classes */
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.6s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Sticky Nav Animation */
+.navbar.sticky {
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Animations */
+.btn, .skill-card, .project-image img, .social-links a {
+    transition: var(--transition);
+}
+
+/* Project Card Animation */
+.project-item {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sequential animations for project items */
+.project-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.project-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.project-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.project-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.project-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.project-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Image Fade Animation */
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}

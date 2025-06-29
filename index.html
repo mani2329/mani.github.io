@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="images/mani-home.png" as="image">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="close-btn" id="closeMenu"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="menu-btn" id="openMenu"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container" id="container">
+            <div class="hero-content" id="hero-content">
+
+                <h3>Hello, It's Me</h3>
+                <h1>Mani Roy</h1>
+                <h3>And I'm a <span>Frontend Developer!</span></h3>
+                <p>Passionate Frontend Developer with a keen eye for user-centric design 
+                    and a proven track record of crafting visually appealing and intuitive
+                     web experiences. Proficient in translating mockups and wireframes into
+                      clean, responsive, and interactive interfaces using a combination of 
+                      HTML, CSS, and JavaScript. 
+
+
+
+
+
+
+
+
+
+               <!-- <h1 class="slide-up">Hi, I'm <span>Mani</span></h1> -->
+                <p class="slide-up delay-1">Web Developer | Designer | Creative Professional</p>
+                <a href="projects.html" class="btn slide-up delay-2">View My Work</a>
+            </div>
+            <div class="hero-image fade-in delay-3" id="hero-image">
+                <img src="images\mani-home.png" alt="Your Name">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="skills-grid">
+                <div class="skill-card slide-up">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, modern websites and web applications.</p>
+                </div>
+                <div class="skill-card slide-up delay-1">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and beautiful user interfaces.</p>
+                </div>
+                <div class="skill-card slide-up delay-2">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Design</h3>
+                    <p>Designing apps that work seamlessly across devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section class="featured-project">
+        <div class="container">
+            <h2 class="section-title">Featured Project</h2>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images\portfolio1.jpg" alt="Project Name">
+                </div>
+                <div class="project-details">
+                    <h3>Project Title</h3>
+                    <p>Brief description of the project and what technologies were used.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="projects.html" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

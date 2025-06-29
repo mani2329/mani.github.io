@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Your Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="close-btn" id="closeMenu"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="menu-btn" id="openMenu"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <section class="weather-app">
+        <div class="container">
+            <h1>Weather App</h1>
+            <div class="weather-container">
+                <div class="search-box">
+                    <input type="text" id="city-input" placeholder="Enter city name">
+                    <button id="search-btn">Search</button>
+                    <button id="location-btn">Use My Location</button>
+                </div>
+                <div class="weather-display">
+                    <div class="weather-info">
+                        <h2 id="city-name">City Name</h2>
+                        <div class="current-weather">
+                            <img id="weather-icon" src="images/weather-icons/01d.png" alt="Weather Icon">
+                            <div class="temp-details">
+                                <span id="temperature">25°C</span>
+                                <span id="weather-description">Sunny</span>
+                            </div>
+                        </div>
+                        <div class="weather-details">
+                            <div class="detail">
+                                <span>Humidity</span>
+                                <span id="humidity">60%</span>
+                            </div>
+                            <div class="detail">
+                                <span>Wind Speed</span>
+                                <span id="wind-speed">5 km/h</span>
+                            </div>
+                            <div class="detail">
+                                <span>Pressure</span>
+                                <span id="pressure">1012 hPa</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forecast">
+                        <h3>5-Day Forecast</h3>
+                        <div class="forecast-cards" id="forecast-container">
+                            <!-- Forecast cards will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/weather.js"></script>
+</body>
+</html>
