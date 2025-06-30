@@ -1142,3 +1142,18 @@ a {
     background: var(--primary-color);
     color: white;
 }
+
+.thank-you {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.thank-you h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.thank-you p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
